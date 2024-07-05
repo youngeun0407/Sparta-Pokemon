@@ -9,7 +9,7 @@ const PokemonDetailPage = async ({ params }: { params: { id: string } }) => {
 
   return (
     <div className="pokemon-details max-w-xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden border border-red-500 mt-2 ">
-      <div className="bg-white text-gray-800 text-center p-4 border-b-2 border-red-500 ">
+      <div className="bg-white text-gray-800 text-center p-4 border-b border-red-500 ">
         <h2 className="text-2xl font-bold">{pokemon.korean_name}</h2>
         <p>No.{pokemon.id.toString().padStart(4, "0")}</p>
       </div>

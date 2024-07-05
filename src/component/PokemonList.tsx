@@ -25,12 +25,12 @@ const PokemonList: React.FC = () => {
           <p className="text-xl font-semibold">불러오는 중입니다</p>
         </div>
       ) : (
-        <div className="grid grid-cols-6 gap-4">
+        <div className="grid grid-cols-6 gap-4 ml-3">
           {pokemons.map((pokemon) => (
             <Link
               key={pokemon.id}
               href={`/pokemon/${pokemon.id}`}
-              className="p-4 border rounded-md "
+              className="flex flex-col items-center justify-center p-4 border border-dotted border-rose-500 rounded-md text-center"
             >
               <div className="text-black">
                 <Image
